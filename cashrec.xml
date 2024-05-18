@@ -1,0 +1,105 @@
+<? xml version = "1.0" encoding = "UTF-8" ?>
+
+<ENVELOPE>
+<HEADER>
+<TALLYREQUEST>Import Data</TALLYREQUEST>
+</HEADER>
+
+
+<BODY>
+<IMPORTDATA>
+
+
+
+<REQUESTDESC>
+<REPORTNAME>All Masters</REPORTNAME>
+<STATICVARIABLES>
+<SVCURRENTCOMPANY>MIXBOX PROJECT</SVCURRENTCOMPANY>
+</STATICVARIABLES>
+</REQUESTDESC>
+
+
+
+<REQUESTDATA>
+<TALLYMESSAGE xmlns:UDF="TallyUDF">
+<VOUCHER ACTION="Create" VCHTYPE=" Receipt ">  
+<VOUCHERTYPENAME>Receipt</VOUCHERTYPENAME>     
+<DATE>20230402</DATE>
+<VOUCHERNUMBER></VOUCHERNUMBER>
+                        <PARTYLEDGERNAME>ABC Debtor</PARTYLEDGERNAME>
+                        <NARRATION>Cash Received</NARRATION>	  		
+                        <EFFECTIVEDATE>20230402</EFFECTIVEDATE> 
+<ALLLEDGERENTRIES.LIST>	
+                            <LEDGERNAME>ABC Debtor</LEDGERNAME>	
+                            <REMOVEZEROENTRIES>NO</REMOVEZEROENTRIES>
+                            <LEDGERFROMITEM>NO</LEDGERFROMITEM>
+                            <ISDEEMEDPOSITIVE>NO</ISDEEMEDPOSITIVE>  
+                            <AMOUNT>600</AMOUNT>
+</ALLLEDGERENTRIES.LIST>
+<ALLLEDGERENTRIES.LIST>	
+                            <LEDGERNAME>PQR Debtor</LEDGERNAME>	
+                            <REMOVEZEROENTRIES>NO</REMOVEZEROENTRIES>
+                            <LEDGERFROMITEM>NO</LEDGERFROMITEM>
+                            <ISDEEMEDPOSITIVE>NO</ISDEEMEDPOSITIVE>  
+                            <AMOUNT>600</AMOUNT>
+</ALLLEDGERENTRIES.LIST>
+<ALLLEDGERENTRIES.LIST>	
+                            <LEDGERNAME>Cash</LEDGERNAME>	
+                            <REMOVEZEROENTRIES>NO</REMOVEZEROENTRIES>
+                            <LEDGERFROMITEM>NO</LEDGERFROMITEM>
+                            <ISDEEMEDPOSITIVE>YES</ISDEEMEDPOSITIVE>  
+                            <AMOUNT>-1200</AMOUNT>
+</ALLLEDGERENTRIES.LIST>
+</VOUCHER>
+</TALLYMESSAGE>
+</REQUESTDATA>
+
+
+
+
+
+
+
+<REQUESTDATA>
+<TALLYMESSAGE xmlns:UDF="TallyUDF">
+<VOUCHER ACTION="Create" VCHTYPE=" Receipt ">  
+<VOUCHERTYPENAME>Receipt</VOUCHERTYPENAME>     
+<DATE>20230403</DATE>
+<VOUCHERNUMBER></VOUCHERNUMBER>
+                        <PARTYLEDGERNAME>ABC Debtor</PARTYLEDGERNAME>
+                        <NARRATION>Cash Received</NARRATION>	  		
+                        <EFFECTIVEDATE>20230403</EFFECTIVEDATE> 
+<ALLLEDGERENTRIES.LIST>	
+                            <LEDGERNAME>ABC Debtor</LEDGERNAME>	
+                            <REMOVEZEROENTRIES>NO</REMOVEZEROENTRIES>
+                            <LEDGERFROMITEM>NO</LEDGERFROMITEM>
+                            <ISDEEMEDPOSITIVE>NO</ISDEEMEDPOSITIVE>  
+                            <AMOUNT>1</AMOUNT>
+</ALLLEDGERENTRIES.LIST>
+<ALLLEDGERENTRIES.LIST>	
+                            <LEDGERNAME>PQR Debtor</LEDGERNAME>	
+                            <REMOVEZEROENTRIES>NO</REMOVEZEROENTRIES>
+                            <LEDGERFROMITEM>NO</LEDGERFROMITEM>
+                            <ISDEEMEDPOSITIVE>NO</ISDEEMEDPOSITIVE>  
+                            <AMOUNT>2</AMOUNT>
+</ALLLEDGERENTRIES.LIST>
+<ALLLEDGERENTRIES.LIST>	
+                            <LEDGERNAME>Cash</LEDGERNAME>	
+                            <REMOVEZEROENTRIES>NO</REMOVEZEROENTRIES>
+                            <LEDGERFROMITEM>NO</LEDGERFROMITEM>
+                            <ISDEEMEDPOSITIVE>YES</ISDEEMEDPOSITIVE>  
+                            <AMOUNT>-3</AMOUNT>
+</ALLLEDGERENTRIES.LIST>
+</VOUCHER>
+</TALLYMESSAGE>
+</REQUESTDATA>
+
+
+
+
+
+</IMPORTDATA>
+</BODY>
+
+
+</ENVELOPE>
